@@ -1,0 +1,50 @@
+.about {
+  background-color: #0a192f;
+  color: #d1d5db;
+}
+
+.about-area {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.about-left {
+  width: 100%;
+  gap: 8px;
+}
+
+.left-title {
+  padding: 0px 0px 32px 16px;
+
+}
+
+.left-title p {
+  font-size: 36px;
+  font-weight: 700;
+  display: inline;
+  border-bottom: 4px solid rgb(219 39 119);
+}
+
+.about-right {
+  padding: 0px 16px;
+}
+
+.right-title p:first-child {
+    font-size: 36px;
+    font-weight: 700;
+    padding-bottom: 10px;
+}
+
+
+
+
+
+
+
+
+
+

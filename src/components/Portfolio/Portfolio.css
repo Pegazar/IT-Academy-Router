@@ -1,0 +1,97 @@
+.portfolio {
+  width: 100%;
+  height: 100%;
+  padding-top: 140px;
+  display: flex;
+  justify-content: center;
+  background-color: #0a192f;
+  color: #d1d5db;
+}
+
+.portfolio-title {
+  text-align: center;
+}
+
+.portfolio-title p {
+  font-size: 36px;
+  font-weight: 700;
+  display: inline;
+  border-bottom: 4px solid rgb(219 39 119);
+}
+
+.boxes {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  place-items: center;
+  margin-bottom: 50px;
+  z-index: 10;
+}
+
+.box {
+  width: 310px;
+  height: 250px;
+  margin-top: 20px;
+  border-radius: 5px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.overlay {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 310px;
+  height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.overlay:hover {
+  opacity: 1;
+  background-color: rgba(0, 0, 0, 0.8);
+  transition: 0.4s;
+}
+
+.overlay span {
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+  padding-bottom: 50px;
+}
+
+.overlay-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.overlay-link button {
+  border-radius: 5px;
+  padding: 10px 15px;
+  color: rgb(55 65 81);
+  cursor: pointer;
+  border: none;
+}
+
+.overlay-link button:hover {
+  background-color: #0a192f;
+  transition: 0.4s;
+  color: rgb(219 39 119);
+}
+
+@media only screen and (max-width: 1200px) {
+  .boxes {
+    grid-template-columns: auto auto;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .boxes {
+    grid-template-columns: auto;
+  }
+}

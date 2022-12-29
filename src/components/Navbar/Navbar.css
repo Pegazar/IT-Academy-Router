@@ -1,0 +1,108 @@
+.navbar {
+  position: fixed;
+  width: 100%;
+  height: 80px;
+  background-color: #0a192f;
+  z-index: 10;
+}
+
+.logo a {
+  text-decoration: none;
+  color: #d1d5db;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.logo a:hover {
+  color: #db2777;
+  transition: 0.5s;
+}
+
+.logo a span {
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+/* Menu */
+.list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  margin: 0;
+}
+
+.list li {
+  list-style: none;
+}
+
+.list li a {
+  color: #d1d5db;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.list li a:hover {
+  color: #db2777;
+  transition: 0.5s;
+}
+
+/* Buger Menu */
+
+.burger {
+  color: #d1d5db;
+  display: none;
+  cursor: pointer;
+  font-size: 17px;
+  z-index: 10;
+}
+
+.d-none {
+  display: none;
+}
+
+.show {
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .logo a {
+    font-size: 17px;
+  }
+  .list {
+    display: none;
+  }
+
+  .burger {
+    display: flex;
+  }
+
+  .show {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #0a192f;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+  }
+
+  .menu-list {
+    padding: 50px 0px;
+    list-style: none;
+  }
+  .menu-list a {
+    color: #d1d5db;
+    text-decoration: none;
+    font-size: 24px;
+  }
+
+  .menu-list :hover {
+    color: #db2777;
+  }
+}
